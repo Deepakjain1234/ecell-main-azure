@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome</title>
+  <link type="text/css" rel="stylesheet" href="main.css" />
+  <script src="./assets/js/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/CSSRulePlugin.min.js"
+    integrity="sha512-oYnRsy+bFXYr+btXcKk2dpzfERnCUc5G4GkJ0AO/XSvomLV7Xc7tZVhTsYIz9QzOAw9qo/6qoA6JTpzaYuHUGg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Open+Sans:wght@700&family=Oswald:wght@600&family=Roboto+Condensed:wght@700&display=swap"
+    rel="stylesheet" />
+  <!--FONT AWESOME-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!--GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/css/stylesheet.css" />
+
+</head>
+
+<body style="margin: 0; padding: 0;">
+
+  <!-- Import maps polyfill -->
+  <!-- Remove this when import maps will be widely supported -->
+  <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+  <script type="importmap">
+      {
+        "imports": {
+          "three": "../assets/js/build/three.module.js"
+        }
+      }
+    </script>
+  <script>
+    globalThis.SPEAKERS = "pause";
+
+  </script>
+  <script type="module" src="./assets/js/cards.js">
+
+  </script>
+
+
+  <!-- tsparticles -->
+  <div id="tsparticles"></div>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.1.3/tsparticles.bundle.js"></script>
+  <script src="./assets/js/colors.js"></script>
+  <!-- /tsparticles -->
+
+  <!-- NAVBAR -->
+  <nav class="">
+    <!-- <div class="logo">
+        The Nav
+
+      </div> -->
+    <ul class="nav-items" style="margin: 0; text-transform: uppercase; padding: 0px 54px 0px 0px">
+      <li class="nav-link">
+        <a onclick="navScroll('second')">about us</a>
+      </li>
+      <li class="nav-link">
+        <a href="esummit/">E-Summit</a>
+      </li>
+      <li class="nav-link">
+        <a onclick="navScroll('fourth')">sponsors</a>
+      </li>
+      <li class="nav-link">
+        <a onclick="navScroll('third')">speakers</a>
+      </li>
+      <li class="nav-link">
+        <a href="events/">past events</a>
+      </li>
+      <li class="nav-link">
+        <a href="teams/">our team</a>
+      </li>
+      <li class="nav-link">
+        <a href="faq/">faqs</a>
+      </li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+  <!-- /NAVBAR -->
+
+  <!-- social -->
+  <div class="social" style="">
+    <div class="social-bigs">
+      <a href="https://www.facebook.com/ecellnitbhopal/" class="animate__animated animate__fadeInUp animate__delay-2s" target="_blank"><i
+          class="fab fa-facebook-f" style="/* color: white; */ font-size: 1.3em"></i></a>
+      <a href="https://twitter.com/ecell_nitb" class="animate__animated animate__fadeInUp animate__delay-3s" target="_blank"><i class="fab fa-twitter"
+          style="/* color: white;     */ font-size: 1.3em"></i></a>
+      <a href="https://www.instagram.com/ecell_nitb/" class="animate__animated animate__fadeInUp animate__delay-4s" target="_blank"><i
+          class="fab fa-instagram" style="/* color: white;     */ font-size: 1.3em"></i></a>
+      <a href="https://www.youtube.com/c/EntrepreneurshipCellNITBhopal" class="animate__animated animate__fadeInUp animate__delay-5s" target="_blank"><i class="fab fa-youtube"
+          style="/* color: white;     */ font-size: 1.3em"></i></a>
+    </div>
+    <div class="social-mobile">
+      <a href="https://www.facebook.com/ecellnitbhopal/" class="animate__animated animate__fadeInUp animate__delay-2s" target="_blank"><i
+          class="fab fa-facebook-f" style="/* color: white; */ font-size: 1.3em"></i></a>
+      <a href="https://twitter.com/ecell_nitb" class="animate__animated animate__fadeInUp animate__delay-3s" target="_blank"><i class="fab fa-twitter"
+          style="/* color: white;     */ font-size: 1.3em"></i></a>
+      <a href="https://www.instagram.com/ecell_nitb/" class="animate__animated animate__fadeInUp animate__delay-4s" target="_blank"><i
+          class="fab fa-instagram" style="/* color: white;     */ font-size: 1.3em"></i></a>
+      <a href="https://www.youtube.com/c/EntrepreneurshipCellNITBhopal" class="animate__animated animate__fadeInUp animate__delay-5s" target="_blank"><i class="fab fa-youtube"
+          style="/* color: white;     */ font-size: 1.3em"></i></a>
+    </div>
+  </div>
+  <!-- /social -->
+
+  <!-- background -->
+  <div id="background" style=""></div>
+  <div id="background-mesh" style=""></div>
+  <!-- /background -->
+
+  <!-- main document container class -->
+  <div class="container">
+    <!-- subcontainer classes -->
+
+    <!-- welcome page -->
+    <div class="sub-container scroll-box" id="first">
+      <img src="logo.png" alt="" id="logo">
+      <!-- welcome text -->
+      <div id="d-flex">
+        <div class="back-filter">
+          <div id="tagline1" class="animate__animated animate__fadeInDown animate__delay-3s">
+            <div class="makeThings">MAKE</div>
+            <div class="makeThings">THINGS</div>
+          </div>
+        </div>
+        <!-- put some shadow -->
+        <div class="back-filter">
+          <div style="text-shadow: 0 0 12px #260000" id="heading-container">
+            <div id="heading" class="frontText">Entrepreneurship Cell</div>
+            <div id="subHeading" class="frontText">NIT BHOPAL</div>
+          </div>
+        </div>
+        <div class="back-filter">
+          <div id="tagline2" class="animate__animated animate__fadeInUp animate__delay-3s">
+            Happen
+          </div>
+        </div>
+        <!-- arrow head -->
+        <div class="arrow-box oneHead">
+          <div class="amtd animate__animated animate__fadeInUp animate__delay-4s">
+            <div class="arrow">
+              <a href="#about">
+                <div class="headShake">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor"
+                    class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
+                  </svg>
+                </div>
+              </a>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="camel"
+                viewBox="0 0 470 80">
+                <path class="a"
+                  d="M470,80c-49.807,0-90.23,0-157.843-45.005C287.294,18.418,267.483,0,235,0s-52.293,18.418-77.157,34.995C90.23,80,49.807,80,0,80H470Z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- /arrow head -->
+      </div>
+
+      <!-- /welcome text -->
+
+
+    </div>
+    <!-- /welcome page -->
+
+    <!-- about-us -->
+    <div class="sub-container scroll-box" style="color: white; margin-top:20px;position: relative; z-index: 3;"
+      id="second">
+
+      <div id="about-child-one" style="
+          ">
+        <div id="about-child-two" style="
+              width: 100%;
+              display: flex;
+              flex-wrap: wrap;
+              align-content: center;
+              justify-content: center;
+            ">
+          <h1 id="about-head" style="
+                
+              ">
+            ABOUT US
+          </h1>
+
+          <div id="about-child-three" style="">
+            <div id="left" style="">
+              <h4 class="about-desc" style="">
+                <div id="video-parent-mobile" style="">
+                  <video src="https://www.ecellnitb.com/homepage/assets/videos/movie.mp4" id="about-vid-mobile" style=""
+                    autoplay="" muted="" loop="" type=""></video>
+                </div>
+                <span id="paragraphs">
+                  <span>
+                    Entrepreneurship Cell NIT-Bhopal is a non-profit student
+                    organization that works to support and unleash the budding
+                    entrepreneurial minds and promote the start-up culture among
+                    the students.
+                  </span>
+
+                  <span>
+                    We at E-Cell link students with mentors, seekers with
+                    investors and aspiring entrepreneurs with enduring
+                    entrepreneurs. By organizing several entrepreneurship
+                    development programmes and camps, skill development
+                    workshops and speaker sessions, hosting brainstorming
+                    competitions, we aim to promote the development of
+                    knowledge-based enterprises and open doors towards
+                    opportunities in inventive areas.
+                  </span>
+
+                  <span>
+                    Connected with a prominent alumni network and established
+                    entrepreneurs,E-Cell NIT-B thrives to
+                    serve the purpose of providing necessary resources and
+                    potential guidance to spirited individuals.</span>
+
+
+                  <span>
+                    Connected with a prominent alumni network and established
+                    entrepreneurs,E-Cell NIT-B thrives to
+                    serve the purpose of providing necessary resources and
+                    potential guidance to spirited individuals.</span>
+                  <br><br><br>
+
+              </h4>
+            </div>
+            <div id="right" style="">
+              <div id="video-parent" style="">
+                <video src="https://www.ecellnitb.com/homepage/assets/videos/movie.mp4" id="about-vid" style=""
+                  autoplay="" muted="" loop="" type=""></video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /about-us -->
+
+    <!-- speakers page -->
+    <div class="sub-container scroll-box" style="
+          color: white;
+          position: relative;
+          /* z-index: 3; */
+          /* background-color: inherit; */
+          /* border: solid 1px white; */
+          margin-top:10px;
+          opacity: 1;
+
+        " id="third">
+      <div id="speakers">
+      </div>
+    </div>
+    <!-- /speakers page -->
+
+    <!-- sponsors/footer page -->
+    <div class="sub-container scroll-box" style="
+/*     
+    background-color: #0cbaba;
+          background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%); */
+    margin-top:2px;position: relative; z-index: 3;padding-top:0.1em;height:Auto;" id="fourth">
+      <h1 id="sponsor-head" style="width:auto !important; text-transform: uppercase;filter:brightness(1.3);">Our
+        Sponsors</h1>
+      <div id="sponsorIcons">
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 5.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 6.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 7.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 8.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 9.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 10.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 11.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 12.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 13.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 14.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 15.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 16.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 17.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 18.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 19.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 21.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 22.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 23.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 24.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 25.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 26.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 27.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 28.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 29.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 30.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 31.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 32.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 33.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 34.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 35.png" alt=""></div>
+        <div class="sponsorItem"><img src="./assets/images/sponsors/Asset 36.png" alt=""></div>
+      </div>
+    </div>
+    <!-- sponsors/footer page -->
+
+    <div class="sub-container scroll-box" style="
+          color: white;
+          position: relative;
+          /* z-index: 3; */
+          /* background-color: inherit; */
+          /* border: solid 1px white; */
+          margin-top:2px;
+          opacity: 1;
+          background-color: black;
+        " id="fifth">
+      <div id="lst" style="
+        height: 100vh;
+        overflow: hidden;
+    ">
+        <div style="height: 100%;width: 100vw;margin-top: 75px;">
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14667.237550403466!2d77.3996967789681!3d23.213616207704654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c42e43fe40941%3A0x10377d4af64ac6e9!2sMaulana%20Azad%20National%20Institute%20of%20Technology%2C%20Bhopal%2C%20Madhya%20Pradesh%2C%20India!5e0!3m2!1sen!2sus!4v1659611970585!5m2!1sen!2sus"
+            style="border:0;width:100%;height:40%;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div style="
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            align-items: center;
+            padding: 2em 5%;
+            justify-content: center;
+        ">
+            <div style="
+    width: 45%;
+    height: 100%;
+" id="conDet">
+
+              <div class="foot-contact" style="font-family: 'Noto Sans';">
+                <div class="contact-head">
+                  <h2>Contact Us</h2>
+                </div>
+                <div class="info-our">
+                  <div class="info-our-body">
+                    <i class="fas fa-phone-volume">&nbsp;</i>
+                    <a href="tel:+918989473997">+91 89894 73997</a>
+                  </div>
+                  <div class="info-our-body">
+                    <i class="far fa-envelope">&nbsp;</i>
+                    <a href="mailto: support@ecellnitb.com"> support@ecellnitb.com</a>
+                  </div>
+                  <div class="info-our-body">
+                    <i class="fas fa-map-marker-alt">&nbsp;</i>
+                    <span>Maulana Azad National Institute of Technology, Bhopal</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <label style="
+                position: relative;
+                top: -19px;
+            ">Write to us</label>
+              <form>
+                <div class="input-container">
+                  <input type="text" required="">
+                  <label>Full Name</label>
+                </div>
+                <div class="input-container">
+                  <input type="mail" required="">
+                  <label>Email</label>
+                </div>
+                <div class="input-container">
+                  <textarea type="text" required=""></textarea>
+                  <label>Message</label>
+                </div>
+                <button type="button" class="btn">submit</button>
+              </form>
+            </div>
+          </div>
+</body>
+<script src="assets/js/app.js"></script>
+<script src="./assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+
+<script>
+  ScrollTrigger.clearScrollMemory();
+  window.history.scrollRestoration = "manual";
+
+  var map = ["first", "second", "third", "fourth", "fifth"]
+  var current = 1;
+  function navScroll(targetId) {
+    var takeTo = map.indexOf(targetId) + 1;
+    var takeFrom = current;
+    if (takeTo > takeFrom) {
+      //slideDown
+      for (i = takeFrom + 1; i <= takeTo; i++) {
+        scrollBy(0, window.innerHeight);
+      }
+    } else if (takeTo < takeFrom) {
+      //slideUp
+      if (current == 5) {
+        scrollBy(0, -window.innerHeight);
+      }
+      for (i = takeFrom - 1; i >= takeTo; i--) {
+        scrollBy(0, -window.innerHeight);
+      }
+    }
+  }
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(() => {
+      if (Boolean(document.location.search.split("=")[1])) {
+        navScroll(document.location.search.split("=")[1]);
+      }
+    }, 1000)
+
+    // var fixSpeakers = document.getElementById("speakers").style;
+
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.registerPlugin(ScrollToPlugin);
+
+    gsap.utils.toArray(".scroll-box").forEach(function (elem, i) {
+      ScrollTrigger.create({
+        trigger: elem,
+        onEnter: function ({ progress, direction, isActive }) {
+          // console.log(
+          //   progress,
+          //   direction,
+          //   isActive,
+          //   elem,
+          //   " entered from top"
+          // );
+          gsap.to(window, {
+            duration: 0.3,
+            scrollTo: "#" + elem.id,
+            ease: Linear.easeNone,
+          });
+
+          if (i + 1 == 2) {
+            // fixSpeakers.position = "static";
+            gsap.to("#d-flex", {
+              opacity: 0,
+              duration: 2,
+            })
+            current = 2;
+            tl2.progress(0).play();
+          }
+          if (i + 1 == 3) {
+            current = 3;
+            tl3.progress(0).play();
+            SPEAKERS = "start";
+            // setTimeout(function () { fixSpeakers.position = "fixed"; }, 500);
+            // console.log("entered 3 from top");
+          }
+          if (i + 1 == 4) {
+            // fixSpeakers.position = "static";
+            current = 4;
+            tl4.progress(0).play();
+            // console.log("entered 4 from top");
+          }
+          if (i + 1 == 5) {
+            current = 5;
+          }
+        },
+        onEnterBack: function ({ progress, direction, isActive }) {
+          // console.log(
+          //   progress,
+          //   direction,
+          //   isActive,
+          //   elem,
+          //   " entered from bottom"
+          // );
+          gsap.to(window, {
+            duration: 0.3,
+            scrollTo: "#" + elem.id,
+            ease: Linear.easeNone,
+          });
+          if (i + 1 == 1) {
+            // fixSpeakers.position = "static";
+            current = 1;
+            tl2.progress(1).reverse();
+            gsap.to("#d-flex", {
+              opacity: 1,
+              duration: 2,
+            })
+          }
+          if (i + 1 == 2) {
+            // fixSpeakers.position = "static";
+
+            tl2.restart();
+            tl3.reverse();
+            tl2.progress(0).play(); current = 2;
+            // console.log("entered 2 from bottom");
+          }
+          if (i + 1 == 3) {
+            // tl3.restart();
+
+            tl4.reverse(); current = 3;
+            // tl3.play();
+            // setTimeout(function () { fixSpeakers.position = "fixed"; }, 500);
+            // console.log("entered 3 from bottom");
+          }
+
+          if (i + 1 == 4) {
+            // fixSpeakers.position = "static";
+
+            tl4.restart();
+            tl4.play(); current = 4;
+            // console.log("entered 4 from bottom");
+          }
+        },
+        onLeave: function () {
+
+        },
+      });
+    });
+  });
+</script>
+
+</html>
